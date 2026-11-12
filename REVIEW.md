@@ -1,10 +1,9 @@
 # Reviewing a change
 
-How to review a code change in one of sbfnk's repositories, and what is worth
-reporting. This is the **general half** of the review specification — the
-method, shared across repositories. The repository's own `.github/REVIEW.md`
-carries the other half — what to look for in *that* codebase — and a review
-follows both.
+How to review a code change, and what is worth reporting. This is the
+**general half** of the review specification — the method, shared across
+repositories. The repository's own `.github/REVIEW.md` carries the other
+half — what to look for in *that* codebase — and a review follows both.
 
 Say what you want reviewed in whatever form your tool takes — "review PR 359",
 "review what changed since abc1234", "post the findings on the PR".
