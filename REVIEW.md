@@ -1,7 +1,7 @@
-# Reviewing an epiforecasts change
+# Reviewing a change
 
-How to review a code change in an epiforecasts repository, and what is worth
-reporting. This is the **org-wide half** of the review specification — the
+How to review a code change in one of sbfnk's repositories, and what is worth
+reporting. This is the **general half** of the review specification — the
 method, shared across repositories. The repository's own `.github/REVIEW.md`
 carries the other half — what to look for in *that* codebase — and a review
 follows both.
