@@ -43,7 +43,12 @@ Where a finding is about behaviour, reproduce it with a run, and say whether the
 
 When a finding is one instance of a pattern, say so and list the other places it occurs, so the fix can cover all of them.
 
-Bloat the change adds is a finding, with the whole sentence or block to cut as its suggestion: a comment that restates the code, argues for the change or records how it came about, where it should say why the code does what it does; documentation that repeats what the signature or code already says, or gives the change's history or alternatives where a user needs only how to use it; an internal helper, constructor or wrapper with one caller that adds nothing over writing its body in place; and code nothing reaches.
+Bloat the change adds is a finding, with the whole sentence or block to cut as its suggestion:
+
+- a comment that restates the code, argues for the change or records how it came about, where it should say why the code does what it does
+- documentation that repeats what the signature or code already says, or gives the change's history or alternatives where a user needs only how to use it
+- an internal helper, constructor or wrapper with one caller that adds nothing over writing its body in place
+- code nothing reaches
 
 A test the change adds or relies on is a finding when its name or comments say it guards a behaviour but it passes with that behaviour broken. Break the behaviour in a scratch copy or worktree, never in the working tree under review, so that the author's work is left as it was.
 
