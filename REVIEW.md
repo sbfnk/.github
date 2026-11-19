@@ -47,7 +47,7 @@ Each of these is a finding where the change adds it, and the fix is to remove it
 
 - a comment that restates the code, or that addresses the reviewer (what the change replaced, what was asked for, what was tried); in a comment that also says why the code does what it does, only the rest goes
 - prose documentation that repeats what the signature already says (argument names, types, the return value) beyond what the documentation format requires, or that justifies the design instead of telling the user how to use it
-- an internal helper, constructor or wrapper with one caller, tests included, that adds nothing over writing its body in place
+- an internal helper, constructor or wrapper with one caller, counting calls from tests, that adds nothing over writing its body in place
 - code the change adds with nothing reaching it, or existing code whose last caller the change removes; anything reached from outside the code itself (exported functions, methods, entry points, callbacks registered by name, code the tests call) counts as reached, and the finding says how you confirmed there is no caller
 
 A test the change adds or relies on is a finding when its name or comments say it guards a behaviour but it passes with that behaviour broken. Break the behaviour in a scratch copy or worktree, never in the working tree under review, so that the author's work is left as it was.
