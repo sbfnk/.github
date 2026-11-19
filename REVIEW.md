@@ -43,6 +43,8 @@ Where a finding is about behaviour, reproduce it with a run, and say whether the
 
 When a finding is one instance of a pattern, say so and list the other places it occurs, so the fix can cover all of them.
 
+Bloat the change adds is a finding, with the cut as its suggestion: a comment that restates the code or justifies a design choice, a docstring or documentation longer than what the code does needs, a reason given in documentation where the behaviour is enough, a helper, constructor or wrapper with one caller, and code nothing reaches.
+
 A test the change adds or relies on is a finding when its name or comments say it guards a behaviour but it passes with that behaviour broken. Break the behaviour in a scratch copy or worktree, never in the working tree under review, so that the author's work is left as it was.
 
 A review that ends with nothing to say is a good outcome, and a common one on a
