@@ -45,7 +45,7 @@ When a finding is one instance of a pattern, say so and list the other places it
 
 Bloat the change adds is a finding, with the whole sentence or block to cut as its suggestion:
 
-- a comment that restates the code, argues for the change or records how it came about, where it should say why the code does what it does
+- a comment that restates the code, argues for the change or records how it came about: cut it, as a comment says only why the code does what it does
 - documentation that repeats what the signature or code already says, or gives the change's history or alternatives where a user needs only how to use it
 - an internal helper, constructor or wrapper with one caller that adds nothing over writing its body in place
 - code nothing reaches
