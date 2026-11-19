@@ -43,6 +43,8 @@ Where a finding is about behaviour, reproduce it with a run, and say whether the
 
 When a finding is one instance of a pattern, say so and list the other places it occurs, so the fix can cover all of them.
 
+Code, comments and documentation should be as short as they can be without losing anything. Report what can be cut: comments that restate the code, documentation that repeats the signature, helpers that add nothing, code nothing uses.
+
 A test the change adds or relies on is a finding when its name or comments say it guards a behaviour but it passes with that behaviour broken. Break the behaviour in a scratch copy or worktree, never in the working tree under review, so that the author's work is left as it was.
 
 A review that ends with nothing to say is a good outcome, and a common one on a
