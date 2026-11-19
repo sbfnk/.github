@@ -48,7 +48,7 @@ Bloat the change adds is a finding. The suggestion is the cut, the whole sentenc
 - a comment that restates the code, argues for the change or records how it came about: cut it, as a comment says only why the code does what it does
 - prose documentation that repeats what the signature or code already says, beyond what the documentation format requires, or gives the change's history or alternatives where a user needs only how to use it
 - an internal helper, constructor or wrapper with one caller that adds nothing over writing its body in place
-- code nothing reaches
+- code the change adds, or leaves, with nothing reaching it; an exported function counts as reached
 
 A test the change adds or relies on is a finding when its name or comments say it guards a behaviour but it passes with that behaviour broken. Break the behaviour in a scratch copy or worktree, never in the working tree under review, so that the author's work is left as it was.
 
