@@ -43,7 +43,7 @@ Where a finding is about behaviour, reproduce it with a run, and say whether the
 
 When a finding is one instance of a pattern, say so and list the other places it occurs, so the fix can cover all of them.
 
-Each of these is a finding where the change adds it, and the fix is to remove it; propose that edit under the suggestion rules below, like any other:
+Bloat is a finding only in these forms, where the change brings it about, and the fix is to remove it; propose that edit under the suggestion rules below, like any other:
 
 - a comment that restates the code, or that addresses the reviewer (what the change replaced, what was asked for, what was tried); in a comment that also says why the code does what it does, only the rest goes
 - prose documentation that repeats what the signature already says (argument names, types, the return value) beyond what the documentation format requires, or that justifies the design instead of telling the user how to use it
