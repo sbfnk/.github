@@ -43,7 +43,7 @@ Where a finding is about behaviour, reproduce it with a run, and say whether the
 
 When a finding is one instance of a pattern, say so and list the other places it occurs, so the fix can cover all of them.
 
-Bloat the change adds is a finding, with the whole sentence or block to cut as its suggestion:
+Bloat the change adds is a finding. The suggestion is the cut, the whole sentence or block, except for a helper, where it is the call site with the helper's body written in:
 
 - a comment that restates the code, argues for the change or records how it came about: cut it, as a comment says only why the code does what it does
 - documentation that repeats what the signature or code already says, or gives the change's history or alternatives where a user needs only how to use it
