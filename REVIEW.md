@@ -46,7 +46,7 @@ When a finding is one instance of a pattern, say so and list the other places it
 Bloat the change adds is a finding. The suggestion is the cut, the whole sentence or block, except for a helper, where it is the call site with the helper's body written in:
 
 - a comment that restates the code, argues for the change or records how it came about: cut it, as a comment says only why the code does what it does
-- documentation that repeats what the signature or code already says, or gives the change's history or alternatives where a user needs only how to use it
+- prose documentation that repeats what the signature or code already says, beyond what the documentation format requires, or gives the change's history or alternatives where a user needs only how to use it
 - an internal helper, constructor or wrapper with one caller that adds nothing over writing its body in place
 - code nothing reaches
 
