@@ -46,7 +46,7 @@ When a finding is one instance of a pattern, say so and list the other places it
 Bloat is a finding only in these forms, where the change brings it about, and the fix is to remove it; propose that edit under the suggestion rules below, like any other:
 
 - a comment that restates the code, or that addresses the reviewer (what the change replaced, what was asked for, what was tried); in a comment that also says why the code does what it does, only the rest goes
-- prose documentation that repeats what the signature already says (argument names, types, the return value) beyond what the documentation format requires, or that justifies the design instead of telling the user how to use it
+- prose documentation that repeats what the signature already says (argument names, types, the return value) beyond what the documentation format requires, or that argues for the change to the reviewer (why this design over the one it replaced) rather than telling the user how to use it
 - an internal helper, constructor or wrapper with one caller, counting calls from tests, that adds nothing over writing its body in place
 - code the change adds with nothing reaching it, or existing code whose last caller the change removes; anything reached from outside the code itself (exported functions, methods, entry points, callbacks registered by name, code the tests call) counts as reached, and the finding says how you confirmed there is no caller
 
