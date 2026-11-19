@@ -43,12 +43,12 @@ Where a finding is about behaviour, reproduce it with a run, and say whether the
 
 When a finding is one instance of a pattern, say so and list the other places it occurs, so the fix can cover all of them.
 
-Bloat the change adds is a finding. The suggestion is the cut, the whole sentence or block, except for a helper, where it is the call site with the helper's body written in:
+Each of these is a finding where the change adds it, and the fix is to remove it; propose that edit under the suggestion rules below, like any other:
 
-- a comment that restates the code, argues for the change or records how it came about: cut it, as a comment says only why the code does what it does
-- prose documentation that repeats what the signature or code already says, beyond what the documentation format requires, or gives the change's history or alternatives where a user needs only how to use it
-- an internal helper, constructor or wrapper with one caller that adds nothing over writing its body in place
-- code the change adds, or leaves, with nothing reaching it; an exported function counts as reached
+- a comment that restates the code, or that addresses the reviewer (what the change replaced, what was asked for, what was tried); in a comment that also says why the code does what it does, only the rest goes
+- prose documentation that repeats what the signature or the code already says, beyond what the documentation format requires
+- an internal helper, constructor or wrapper with one caller, tests included, that adds nothing over writing its body in place
+- code the change adds with nothing reaching it, or existing code whose last caller the change removes; anything reached from outside the code itself (exported functions, methods, entry points, callbacks registered by name, code the tests call) counts as reached, and the finding says how you confirmed there is no caller
 
 A test the change adds or relies on is a finding when its name or comments say it guards a behaviour but it passes with that behaviour broken. Break the behaviour in a scratch copy or worktree, never in the working tree under review, so that the author's work is left as it was.
 
